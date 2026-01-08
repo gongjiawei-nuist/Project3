@@ -10,7 +10,6 @@ TO_EMAIL = "bno03972364@163.com"
 SMTP_SERVER = "smtp.163.com"
 SMTP_PORT = 587
 def send_email_with_results():
-    """Send sensor data summary and model performance via email"""
 
     try:
         df = pd.read_csv("preprocessed_data.csv")
