@@ -4,13 +4,11 @@ import time
 import pandas as pd
 from datetime import datetime
 
-# GPIO Setup
 GPIO.setmode(GPIO.BCM)
 SOIL_SENSOR_PIN = 4  # A0 pin connected to GPIO 04
 DHT_SENSOR_PIN = 27  # DHT11 data pin
 dht_device = adafruit_dht.DHT11(DHT_SENSOR_PIN)
 
-# Data storage
 data = []
 collection_duration = 48
 interval = 30
